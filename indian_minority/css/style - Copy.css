@@ -1,0 +1,1041 @@
+:root {
+    --primary-font: 'Bahnschrift';
+    --bg-red: #c12424;
+	--bg-dark: #2c2c2c;
+	--bg-grey: #e7e7e7;
+    --text-color-white: #ffffff;
+    --text-color-red: #c12424;
+    --text-color-black: #111111;
+	--text-color-grey: #666666;
+	
+}
+@import 'fonts.css';
+
+body {
+    font-family: var(--primary-font);
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	
+}
+
+p {
+	font-size: 22px;
+	line-height: 24px;
+	font-weight: 100;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+	letter-spacing: -1px;
+}
+
+
+header {
+	padding: 20px 0;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    transition: 0.5s;
+}
+
+header.fixed-top {
+    position: absolute;
+}
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.alumni-wrap {
+    display: inline-block;
+	background: var(--bg-red);
+	padding: 20px;
+	margin-right: 20px;
+}
+.nav-brand a {
+    display: inline-block;
+}
+
+.pl-0 {
+	padding-left: 0;
+}
+
+.p-90 {
+	padding: 90px 0;
+}
+
+.btn {
+    height: 45px;
+    padding: 0;
+    min-width: 138px;
+    line-height: 45px;
+    font-size: 16px;
+	font-weight: 400;
+    background-color: var(--bg-red);
+    border-color: var(--bg-red);
+	text-transform: uppercase
+}
+
+.btn:hover {
+	background: var(--bg-dark);
+	border-color: var(--bg-dark);
+	color: var(--text-color-white);
+}
+
+.btn-outline-primary {
+    background: transparent;
+    color: var(--text-color-white);
+    border-color: rgb(255 255 255 / 30%);
+    border-width: 1px;
+	min-width: 170px;
+	margin-right: 19px;
+}
+
+.btn-white-primary {
+    background: var(--text-color-white);
+    color: var(--text-color-red);
+    border-color: var(--text-color-white);
+    border-width: 1px;
+	min-width: 216px;
+}
+.btn-white-primary:hover {
+	border-color: var(--text-color-white);
+	background: transparent;
+	color: var(--text-color-white);
+}
+
+.btn-sm {
+    background: var(--text-color-white);
+    color: var(--text-color-red);
+    border-color: var(--text-color-white);
+    border-width: 1px;
+}
+.btn-sm:hover {
+	border-color: var(--text-color-white);
+	background: transparent;
+	color: var(--text-color-white);
+}
+
+.hero-banner {
+    height: 790px;
+}
+.sliderImg{background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;}
+.slider-img {
+    background-image: url("../img/banner-new.jpg");
+    
+}
+.slider-img2 {
+    background-image: url("../img/banner-new.jpg");
+    
+}
+/*
+.slider-img {
+    background-image: url("../img/banner.webp");
+}
+*/
+
+.no-js .slider-img {
+    background-image: url("../img/banner-new.jpg");
+}
+
+.banner-content {
+    width: 720px;
+    position: relative;
+    z-index: 1;
+	padding-top: 120px;
+}
+
+.hero-banner .carousel-item::after {
+    content: '';
+    background: rgba(42,42,42,0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.banner-content h2 {
+    font-size: 60px;
+    line-height: 60px;
+	letter-spacing: -2px;
+    font-weight: 100;
+    color: var(--text-color-white);
+	text-align: center;
+	margin-top:10px;
+	margin-bottom: 20px;
+}
+
+.banner-content p {
+    font-size: 22px;
+    line-height: 28px;
+    color: #4F4F4F;
+}
+
+.banner-content .line-shape {
+	background: var(--bg-red);
+	width: 174px;
+	height: 7px;
+	margin: 0 auto;
+	margin-bottom: 35px;
+	margin-top: 5px;
+}
+
+.banner-content .figures h1 {
+	font-size: 105px;
+	line-height: 95px;
+	font-weight: 600;
+	letter-spacing: -2px;
+	color: var(--text-color-white);
+	margin-bottom: 0px;
+}
+
+.banner-content .figures p {
+	font-size: 24px;
+    font-weight: 600;
+	color: var(--text-color-white);
+	letter-spacing: -2px;
+}
+
+
+
+.chevron {
+  width: 100%;
+  position: absolute;
+  height: 130px;	
+  bottom: -19px;
+  background-color: #c12424;
+  clip-path: polygon(50% 85%, 100% 25%, 100% 100%, 0 100%, 0 25%);
+}
+
+
+input[type=text],
+input[type=email],
+input[type=number],
+select {
+    font-size: 24px;
+    height: 44px;
+    padding: 0 15px 0 0;
+    font-weight: bold;
+	color: var(--text-color-black);
+	border: 0;
+	border-bottom: 1px solid var(--text-color-red);
+	border-radius: 0;
+	letter-spacing: -1px;
+	margin-bottom: 44px;
+}
+
+input::placeholder {
+    font-weight: 100;
+	font-size: 18px;
+}
+
+textarea.form-control {
+    font-size: 24px;
+    height: 77px;
+    padding: 0 15px 0 0;
+    font-weight: bold;
+	color: var(--text-color-black);
+	border: 0;
+	border-bottom: 1px solid var(--text-color-red);
+	border-radius: 0;
+	letter-spacing: -1px;
+	margin-bottom: 33px;
+}
+
+textarea::placeholder {
+    font-weight: 100;
+	font-size: 18px;
+}
+
+select {
+    padding-left: 15px !important;
+}
+
+.main-heading {
+    max-width: 980px;
+    margin: auto
+}
+
+.main-heading h2 {
+    font-size: 50px;
+    color: var(--text-color-black);
+    line-height: 50px;
+    margin-bottom: 60px;
+    font-weight: bold;
+}
+
+.main-heading p {
+    font-size: 22px;
+    color: var(--text-color-white);
+    line-height: 24px;
+}
+
+/* events */
+.events-card {
+    display: block;
+}
+
+.events-card .card-body {
+    height: 280px;
+	background: var(--bg-grey);
+	padding: 35px 26px 0;
+}
+
+.events-card>img {
+    width: 100%;
+}
+
+.events-card h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--text-color-red);
+	line-height: 24px;
+	margin-bottom: 14px;
+}
+
+.events-card a {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--text-color-dark);
+	letter-spacing: -1px;
+    text-decoration: none;
+    line-height: 24px;
+	margin-bottom: 67px;
+	display: block;
+}
+
+.events-card .events-venue span {
+	font-size: 14px;
+    line-height: 14px;
+    font-weight: 100;
+    letter-spacing: -1px;
+    color: var(--text-color-black);
+    text-transform: uppercase;
+    margin-bottom: 9px;
+	display: block;
+}
+
+.events-card .events-venue p {
+    font-size: 18px;
+    line-height: 22px;
+	font-weight: 400;
+    color: var(--text-color-black);
+	margin-bottom: 0;
+}
+
+.events-card button {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    position: absolute;
+    right: 1.5rem;
+    bottom: 1.5rem
+}
+
+.events-card button a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #666;
+    font-weight: normal;
+}
+
+.events-card button a img {
+    margin-right: 10px;
+    display: inline-block
+}
+
+.events-item {
+    padding: 0 15px 0 15px;
+}
+
+.latest-events .slick-arrow {
+    display: none !important;
+}
+/* events end */
+
+
+.slick-dots li button:before {
+    font-size: 26px;
+}
+
+.ft-social {
+    border-top: 1px solid #C4C4C4;
+}
+
+.ft-social p {
+    font-size: 12px;
+    margin: 0;
+    margin-right: 10px;
+}
+
+.ft-social a {
+    margin-right: 5px;
+    display: inline-block
+}
+
+/* new css */
+.bg-red {
+	background: var(--bg-red);
+}
+.alumni-meet {
+    background-image: url(../img/canada-flag-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.alumni-meet .alumni-meet-wrap h1 {
+	font-size: 80px;
+	line-height: 70px;
+	font-weight: 600;
+	color: var(--text-color-white);
+}
+.alumni-meet .alumni-meet-wrap h5 {
+	font-size: 34px;
+	line-height: 34px;
+	font-weight: 100;
+	color: var(--text-color-white);
+	margin-bottom: 37px;
+}
+.alumni-meet .alumni-meet-wrap p {
+	font-size: 28px;
+	line-height: 28px;
+	color: var(--text-color-white);
+	font-weight: 100;
+	max-width: 374px;
+	margin-bottom: 46px;
+}
+.alumni-meet .ontario-chapter-wrap {
+	position: relative;
+	margin-bottom: 41px;
+}
+.alumni-meet .ontario-chapter-wrap .date-wrap {
+	position: absolute;
+	right: 0;
+    bottom: 0;
+	background: #2c2c2c;
+	width: 251px;
+	padding: 20px;
+}
+.alumni-meet .ontario-chapter-wrap .venue-wrap {
+	position: absolute;
+	right: 0;
+    bottom: -88px;
+	background: #d72e2e;
+	width: 281px;
+	padding: 20px;
+}
+.alumni-meet .ontario-chapter-wrap .date-wrap span, .alumni-meet .ontario-chapter-wrap .venue-wrap span  {
+	font-size: 14px;
+	line-height: 14px;
+	font-weight: 100;
+	letter-spacing: 0px;
+	color: var(--text-color-white);
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+.alumni-meet .ontario-chapter-wrap .date-wrap p, .alumni-meet .ontario-chapter-wrap .venue-wrap p {
+	color: var(--text-color-white);
+	font-size: 24px;
+	line-height: 24px;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+.alumni-meet .ontario-chapter-wrap-desc h3 {
+	font-size: 42px;
+	line-height: 42px;
+	font-weight: 600;
+	color: var(--text-color-white);
+	margin-bottom: 18px;
+}
+.alumni-meet .ontario-chapter-wrap-desc p {
+	color: var(--text-color-white);
+	max-width: 370px;
+	margin-bottom: 35px;
+}
+.latest-events::before {
+	content: '';
+    position: absolute;
+    width: 100%;
+    height: 450px;
+    background-image: url(../img/events-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-position: 8.5% 50%;
+    top: 0;
+}
+.p-100 {
+	padding: 100px 0;
+}
+.p-60 {
+	padding: 60px 0 90px;
+}
+.what-we-offer ul {
+	margin-top: 15px;
+	padding-left: 15px;
+}
+
+.what-we-offer ul li {
+    list-style-type: none;
+    margin-bottom: 43px;
+}
+.what-we-offer ul li span {
+    width: 26px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 24px;
+	letter-spacing: -1px;
+    font-weight: 600;
+    color: var(--text-color-red);
+    line-height: 24px;
+	margin: 0;
+}
+.what-we-offer ul li h4 {
+	font-size: 24px;
+	line-height: 24px;
+	font-weight: bold;
+	color: var(--text-color-black);
+    display: inline-block;
+    vertical-align: top;
+	margin: 0;
+}
+.what-we-offer ul li p {
+	margin-top: 23px;
+	margin-bottom: 0;
+    font-weight: 100;
+	color: var(--text-color-grey);
+    max-width: 451px;
+	padding-left: 30px;
+    display: inline-block;
+    vertical-align: top;
+}
+.career-mentors .main-heading h2 {
+	margin-bottom: 34px;
+}
+.career-mentors .main-heading p {
+	max-width: 410px;
+	margin-bottom: 50px;
+}
+.career-mentors .career-mentors-card img {
+	margin-bottom: 26px;
+}
+.career-mentors .career-mentors-card h5 {
+	font-size: 28px;
+	line-height: 28px;
+	font-weight: 600;
+	color: var(--text-color-white);
+	margin-bottom: 13px;
+}
+.career-mentors .career-mentors-card p {
+	font-size: 16px;
+	line-height: 16px;
+	margin: 0;
+	font-weight: 100;
+	color: var(--text-color-white);
+}
+.career-mentors .mentors-item {
+    padding: 0 15px 0 15px;
+}
+
+/* notable alumni */
+.notable-alumni::before {
+	content: '';
+    position: absolute;
+    width: 100%;
+    height: 310px;
+    background: var(--bg-red);
+    top: 0;
+}
+.alumni-card {
+    display: block;
+}
+
+.alumni-card .card-body {
+    height: 200px;
+	background: var(--bg-grey);
+	padding: 35px 26px 0px;
+}
+
+.alumni-card>img {
+    width: 100%;
+}
+
+.alumni-card h3 {
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--text-color-red);
+	line-height: 24px;
+	margin-bottom: 11px;
+	text-transform: uppercase;
+}
+
+.alumni-card h5 {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--text-color-dark);
+	letter-spacing: -1px;
+    text-decoration: none;
+    line-height: 24px;
+	margin-bottom: 38px;
+	display: block;
+}
+
+.alumni-card .alumni-designation span {
+	font-size: 14px;
+    line-height: 14px;
+    font-weight: 100;
+    letter-spacing: -1px;
+    color: var(--text-color-black);
+    text-transform: uppercase;
+    margin-bottom: 9px;
+	display: block;
+}
+
+.alumni-card .alumni-designation p {
+    font-size: 18px;
+    line-height: 22px;
+	font-weight: 400;
+    color: var(--text-color-black);
+	margin-bottom: 0;
+}
+
+.alumni-card button {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    position: absolute;
+    right: 1.5rem;
+    bottom: 1.5rem
+}
+
+.alumni-card button a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #666;
+    font-weight: normal;
+}
+
+.alumni-card button a img {
+    margin-right: 10px;
+    display: inline-block
+}
+
+.alumni-item {
+    padding: 0 15px 0 15px;
+}
+
+.notable-alumni .slick-arrow {
+    display: none !important;
+}
+/* notable alumni end */
+
+/* convenience */
+.convenience .main-heading h2 {
+	margin-bottom: 43px;
+}
+.convenience .main-heading p {
+    margin-bottom: 99px;
+	color: var(--text-color-grey);
+}
+
+/* convenience end */
+footer {
+	background: var(--bg-dark);
+}
+.footer__nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+.footer__nav ul li a {
+    color: var(--text-color-white);
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: ease-in-out .2s;
+    text-transform: uppercase;
+}
+.footer__nav ul li a:hover {
+	color: var(--text-color-red);
+}
+
+.ft-logo {
+	position: relative;
+	top: -44px;
+    margin: 0 auto;
+	margin-bottom: 62px;
+    width: 245px;
+	background: var(--bg-red);
+	padding: 20px;
+}
+.social-icons a {
+	display: inline-block;
+	margin-left: 10px;
+}
+.copyright {
+	margin: 90px 0 0;
+}
+.copyright p {
+	color: rgba(255,255,255,0.3);
+	font-size: 12px;
+	font-weight: 100;
+	text-align: center;
+	margin-bottom: 0;
+	letter-spacing: normal;
+}
+
+header.fixed-top {
+    position: absolute;
+}
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.navbar .nav-link {
+	color: var(--text-color-white);
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: ease-in-out .2s;
+    text-transform: uppercase;
+	margin-right: 20px;
+}
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color: var(--text-color-red);
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+	color: var(--text-color-red);
+}
+
+/* Venue 10 Feb 2023 */
+.venue-wrap p{letter-spacing: -2px;}
+.venue-wrap address, .venue-wrap address a{color:#fff; text-decoration: none; margin-bottom: 0;}
+
+
+
+
+@media (max-width: 1199px) {
+  .offcanvas-collapse {
+    position: fixed;
+    top: 85px; /* Height of navbar */
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: #343a40;
+    transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  }
+  .offcanvas-collapse.open {
+    visibility: visible;
+    transform: translateX(-100%);
+  }
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.nav-underline .nav-link {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-size: 0.875rem;
+  color: #6c757d;
+}
+
+.nav-underline .nav-link:hover {
+  color: #007bff;
+}
+
+.nav-underline .active {
+  font-weight: 500;
+  color: #343a40;
+}
+
+.text-white-50 {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.bg-purple {
+  background-color: #6f42c1;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+header.scrolled {
+    background: var(--bg-red) !important;
+    position: fixed;
+}
+
+.figures{margin-top:20px;}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 1499px){
+	.navbar .nav-link {
+		font-size: 14px;
+		margin-right: 11px;
+	}
+	.alumni-meet .alumni-meet-wrap h1 {
+		font-size: 66px;
+		line-height: 60px;
+	}
+	.alumni-meet .ontario-chapter-wrap .date-wrap p, .alumni-meet .ontario-chapter-wrap .venue-wrap p {
+		font-size: 18px;
+		line-height: 18px;
+	}
+	.alumni-meet .ontario-chapter-wrap .date-wrap	{
+		width: 181px;
+	}
+	.alumni-meet .ontario-chapter-wrap .venue-wrap {
+		bottom: -83px;
+	}
+	.alumni-card h3 {
+		font-size: 28px;
+		line-height: 16px;
+	}
+	.footer__nav ul li {
+		margin: 0 10px;
+	}
+	.venue-wrap p{letter-spacing: normal;}
+	.alumni-meet .ontario-chapter-wrap-desc h3{width: 261px;}
+}
+
+
+@media only screen and (max-width: 1365px){
+	.cu-lgo img{
+		width: 150px
+	}
+	.btn-outline-primary {
+		min-width: 136px;
+	}
+	.navbar .nav-link {
+		font-size: 12px;
+	}
+	header .btn {
+		font-size: 14px;
+	}
+	.banner-content .figures h1 {
+		font-size: 84px;
+	}
+	.alumni-meet .alumni-meet-wrap h1 {
+		font-size: 50px;
+		line-height: 47px;
+	}
+	.alumni-meet .alumni-meet-wrap h5 {
+		font-size: 24px;
+	}
+	.alumni-meet .alumni-meet-wrap p {
+		font-size: 24px;
+		line-height: 24px;
+	}
+	.alumni-meet .ontario-chapter-wrap-desc h3 {
+		font-size: 34px;
+		line-height: 32px;
+	}
+}
+
+
+
+
+@media only screen and (max-width: 1199px){
+	.slider-img{ background-position: center;}
+	.carousel-control-prev,
+	.carousel-control-next{ display: none}
+	.news-card .card-body{ height: 260px;}
+	.news-card a{ font-size: 16px; line-height: 20px; display: block;}
+	
+	
+	
+	button.navbar-toggler.p-0.border-0 {
+		background: #fff;
+		border-radius: 0;
+		padding: 3px 5px !important;
+	}
+	footer {
+		text-align: center;
+	}
+	.social-icons {
+		display: block !important;
+		margin-top: 19px;
+	}
+	.alumni-meet .ontario-chapter-wrap .venue-wrap{bottom: -25px;}
+	.alumni-meet .ontario-chapter-wrap-desc h3{width:100%;}
+}
+
+@media only screen and (max-width: 991px){
+	.banner-content{ width: 330px;}
+	.banner-content h2 {font-size: 44px; line-height: 55px; color: #fff;}
+	.banner-content p{ font-size: 18px; line-height: 24px;}
+	.slider-img{ background-position: right;}
+	.top-numbers h6{ font-size: 15px;}
+	.ft-data{ margin-top: 0;}
+	.ft-add b{ display: block;}
+	.ft-data img{ top: -40px;}
+	.path-sec h3{ font-size: 16px;}
+	.p-80{ padding: 60px 0}
+	.p-90 { padding: 30px 0; }
+	
+	.banner-content {
+		width: 630px;
+		text-align: center;
+	}
+	.banner-content h2 {
+		font-size: 30px;
+		line-height: normal;
+		margin-top: 10px;
+	}
+	.banner-content .line-shape{margin-bottom: 10px;}
+	.banner-content .figures h1 {
+		font-size: 64px;
+		line-height: 70px
+	}
+	.hero-banner {
+		height: 750px;
+	}
+	.chevron{
+		display: none;
+	}
+	.alumni-meet-wrap{
+		margin-bottom: 30px
+	}
+}
+
+@media only screen and (max-width: 767px){
+	.nav-brand{ margin-bottom: 10px;}
+	.banner-overlay{ position: static !important;}
+	.signUp-form{ margin: auto !important; width: 100%;}
+	.helpline{ position: static; width: 210px; margin: 15px auto;}
+	.banner-content h2{ font-size: 36px; line-height: 46px;}
+	.banner-content{ width: 100%; text-align: center}
+	.btn-lg{ height: 55px; line-height: 53px; font-size: 16px}
+	.btn{ height: 43px; line-height: 40px;}
+	.banner-content p{ margin: 15px 0 !important}
+	.carousel-indicators{ margin-bottom: 0}
+	.banner-overlay{ padding-top: 30px !important}
+	.main-heading h2{ font-size: 32px;}
+	.nt-icons{ width: 110px; height: 110px; margin: 10px !important}
+	.nt-icons img{ width: 80%;}
+	.news-item{ padding: 0 10px 30px 10px;}
+	.ft-logo{ text-align: center; margin-bottom: 20px;}
+	.ft-social div.d-flex{ width: 100%; text-align: center; display: block !important;}
+	.ft-social .col-md-6.text-end{ text-align: center !important; padding-top: 10px}
+	.ft-data{ display: block !important; text-align: center}
+	.ft-data img{ position: static}
+	.ft-add { padding-left: 0; border: 1px solid #ddd; border-radius: 6px; padding: 15px; margin-top: 10px; text-align: center; height: 140px;}
+	.top-numbers{ text-align: center}
+	.top-numbers h6{ margin-bottom: 15px}
+	.news-card .card-body{ height: 310px;}
+	.adv-card span{ height: 200px; width: 200px;}
+	.news-card .card-body{ height: 240px;}
+	
+	
+}
+
+
+@media only screen and (max-width: 575px){
+	.cu-lgo img{ width: 160px;}
+	.naac-logo img{ width: 100px;}
+	.naac-logo.mx-3{ margin-right: 0 !important; margin-left: 10px !important}
+	.banner-content h2{ font-size: 32px; line-height: 38px;}
+	.banner-content p{ font-size: 16px; line-height: 21px; color: #000}
+	.signUp-form .col-6{ flex: 0 0 100%; width: 100%; }
+	.main-heading h2{ font-size: 26px; line-height: 30px;}
+	.main-heading p{ font-size: 16px; line-height: 24px;}
+	.news-card .card-body{ height: 260px;}
+	footer .col-6{ flex: 0 0 100%; width: 100%; }
+	.ft-data{ margin-top: 15px;}
+	.p-80{ padding: 40px 0}
+	
+	.fixed-top { background: #c12424;}
+	.alumni-wrap { padding: 15px 15px 0;}
+	
+	.banner-content .figures h1 { font-size: 48px; line-height: 48px;}
+	.alumni-meet .alumni-meet-wrap h5 { }
+	.alumni-meet .alumni-meet-wrap h1 { font-size: 36px; line-height: 38px; }
+	.hero-banner .banner-content .col-6 { width: 50%; }
+	.chevron { display: none; }
+	.banner-content .line-shape { height: 3px; margin-top: 5px; margin-bottom: 30px; }
+	
+	.hero-banner {
+		height: 400px;
+	}
+	.banner-content {
+		padding-top: 65px;
+	}
+	.banner-content h2 {
+		font-size: 26px;
+		line-height: 30px;
+	}
+	.banner-content .figures h1 {
+		font-size: 40px;
+		line-height: 18px;
+	}
+	.alumni-meet .ontario-chapter-wrap .date-wrap, .alumni-meet .ontario-chapter-wrap .venue-wrap {
+		width: 100%;
+		position: static;
+	}
+	.career-mentors .main-heading h2 {
+		margin-bottom: 14px;
+	}
+	.footer__nav ul li a {
+		font-size: 11px;
+	}
+	.ft-logo {
+		width: 205px;
+		padding: 10px;
+	}
+	.ft-logo img{
+		width: 100%;
+	}
+		
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

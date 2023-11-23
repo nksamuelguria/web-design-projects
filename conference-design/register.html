@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="assets/css/bootstrap-min.css" rel="stylesheet" />
+    <link href="assets/css/all.min.css" rel="stylesheet" />
+    <link
+    rel="stylesheet"
+    href="assets/css/animate.min.css"
+  />
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css"/>
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-dark p-0"
+        aria-label="Offcanvas navbar large"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <span
+              ><img
+                src="assets/images/cu-logo.png"
+                class="img-fluid cu-logo"
+                alt=""
+            /></span>
+            <span
+              ><img
+                src="assets/images/naac-logo.png"
+                class="img-fluid naac-logo"
+                alt=""
+            /></span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar2"
+            aria-controls="offcanvasNavbar2"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end text-bg-dark"
+            tabindex="-1"
+            id="offcanvasNavbar2"
+            aria-labelledby="offcanvasNavbar2Label"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbar2Label">
+                Menu
+              </h5>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >About</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Objective</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Outcomes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Schedule</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Resource Persons</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link mobile-on"
+                    href="#"
+                    class="mobile-show"
+                    style="display: none"
+                    >Register Now&nbsp;&nbsp; <i class="fa-solid fa-arrow-right"></i
+                      ></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="register-sec">
+            <a href="#" class="register-btn" class="nav-link mobile-hide"
+              >Register Now &nbsp;&nbsp; <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--Main Section-->
+    
+    <main>
+      <section id="register-section" class="pt-100 pb-100 animate__animated animate__bounceInUp animate__delay-0.2s animate__slower">
+        <div class="container">
+          <h4 class="sub-heading text-center orange-text mt-3 mb-3">Register Now</h4>
+          <div class="row">
+            <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
+              <ul class="nav nav-tabs" id="customTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Registration</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Already Registration</button>
+                </li>
+                
+              </ul>
+              <div class="tab-content" id="customTabContent">
+                <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                  <form>
+                    <div class="form-sec mb-4">
+                      <label for="fullName" class="form-label">Full Name*</label>
+                      <input type="text" class="form-control" id="fullName" placeholder="Full Name">
+                    </div>
+                    <div class="form-sec mb-4">
+                      <label for="EmailId" class="form-label">Email ID *</label>
+                      <input type="email" class="form-control" id="EmailId" placeholder="Email ID">
+                    </div>
+                    <div class="form-sec mb-4">
+                      <label for="PhoneNumber" class="form-label">Phone No.*</label>
+                      <input type="tel" class="form-control" id="PhoneNumber" placeholder="Phone Number">
+                    </div>
+                    <div class="form-sec mb-4">
+                      <label for="universityInstitute" class="form-label">University / Institute *</label>
+                      <input type="text" class="form-control" id="universityInstitute" placeholder="University / Institute">
+                    </div>
+                    <div class="form-sec mb-4">
+                      <label for="state" class="form-label">State*</label>
+                      <input type="text" class="form-control" id="state" placeholder="State">
+                    </div>
+                    <div class="form-sec mb-4">
+                      <label for="gender" class="form-label">Gender</label>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>--Select</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                      </select>
+                    </div>
+                    <div class="form-sec mb-4">
+                      <label for="cuEmployee" class="form-label">Is CU Employee*</label>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>--Select</option>
+                        <option value="Male">Yes</option>
+                        <option value="Female">No</option>
+                      </select>
+                    </div>
+                    <div class="form-sec mb-4">
+                      <label for="accommodation" class="form-label">Accommodation <br>Required*</label>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>--Select</option>
+                        <option value="Male">Yes</option>
+                        <option value="Female">No</option>
+                      </select>
+                    </div>
+                    <div class="form-sec mb-4">
+                      <label for="accommodation" class="form-label">Domain of Specialization:<br>
+                        (Finance/Marketing/HRM & <br>
+                        OB/Others)*</label>
+                        <input type="text" class="form-control" id="" placeholder="">
+                    </div>
+                    <div class="form-sec mb-4">
+                      <label for="totalPayment" class="form-label">Total Payment</label>
+                        <input type="text" class="form-control" id="" placeholder="">
+                    </div>
+                    <div class="col-auto form-btns mt-5">
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                      <button type="reset" class="btn btn-primary">Reset</button>
+                    </div>
+                  </form>
+                </div>
+                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                  <form>
+                    
+                    <div class="form-sec mb-4">
+                      <label for="EmailId" class="form-label">Email ID *</label>
+                      <input type="email" class="form-control" id="EmailId" placeholder="Email ID">
+                    </div>
+                    
+                    <div class="col-auto form-btns mt-5">
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                      <button type="reset" class="btn btn-primary">Reset</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+      </section>
+    </main>
+
+    <!--footer-->
+    <footer class="pt-100 pb-100">
+      <div class="container">
+        <div class="row gap-20">
+          <div class="col-md-3">
+            <h4 class="sub-heading orange-text mb-0">Contact Us</h4>
+          </div>
+          <div class="col-md-6 contact-info">
+            <h6><span class="orange-text"></span>Dr. ABCD</h6>
+            <h6>
+              <span class="orange-text">Email: </span
+              ><a href="mailto:abc@123.com">abc@123.com</a>
+            </h6>
+            <h6>
+              <span class="orange-text">Phone: </span
+              ><a href="tel:9412312345">94123-12345</a>
+            </h6>
+          </div>
+          <div class="col-md-3">
+            <a href="#" class="register-btn" class="nav-link mobile-hide"
+              >Register Now &nbsp;&nbsp; <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--end footer-->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="assets/js/bundle-min-js.js"></script>
+    <script type="text/javascript" src="assets/js/slick.min.js"></script>
+    <script>
+      $(document).ready(function(){
+          if(window.matchMedia("(max-width: 767px)").matches){
+              // The viewport is less than 768 pixels wide - Mobile
+             $('#custom-tabs nav').hide();
+             $('#nav-tabContent').removeClass('tab-content');
+             $('#nav-tabContent .tab-pane ').removeClass('fade');
+          } else{
+              // The viewport is at least 768 pixels wide - desktop
+              $('#custom-tabs .accordion-button').hide();
+              $('#custom-tabs .accordion-collapse').removeClass('collapse');
+          }
+      });
+
+      $('.resource-slider').slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true,
+              
+            }
+          },
+          {
+            breakpoint: 991,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              dots: true,
+              
+            }
+          }
+          ]
+      });
+      $(window).scroll(function() {
+        if ($(this).scrollTop() > 500) {
+          $('header .navbar').addClass('sticky');
+        } else {
+          $('header .navbar').removeClass('sticky');
+        }
+      });
+      </script>
+  </body>
+</html>

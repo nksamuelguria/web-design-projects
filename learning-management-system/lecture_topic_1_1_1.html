@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!--Custom Style-->
+   <link href="css/style.css" rel="stylesheet">
+
+   <!-- Bootstrap CSS -->
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+
+   <!--font awesome-->
+   <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css" />
+   <script src="https://site-assets.fontawesome.com/releases/v6.1.1/js/all.js" data-auto-add-css="false"
+      data-auto-replace-svg="false"></script>
+   <title>Lecture 1.1.1</title>
+</head>
+
+<body>
+   <!-- HEADER -->
+   <header>
+      <nav>
+         <div class="container-fluid d-flex">
+            <a href="#" class="cu-logo">
+               <img src="images/cu-logo.png" alt="CU Logo" class="desktop-ver-logo">
+
+            </a>
+            <div class="header-nav">
+               <div class="user-details-left d-flex">
+                  <a href="#" class="toggle-btn">
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                  </a>
+                  <div class="user-profile d-flex dropdown">
+                     <div class="profile-img ">
+                        <img src="images/profile-img.png" alt="">
+
+                     </div>
+                     <div class="user-details">
+                        <h3>Hi, Lokesh Pawar</h3>
+                        <p>lokesh.cse@cumail.in</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="user-details-right">
+                  <ul class="d-flex list-unstyled">
+                     <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle mail-icon" href="#" data-bs-toggle="dropdown"
+                           aria-expanded="false"><img src="images/mail-icon.png" alt="Mail-Icon">
+                           <span class="count">4</span>
+                        </a>
+                        <ul class="dropdown-menu custom-dropdown">
+                           <li class="dropdown-heading"><span>10</span>&nbsp;Messages</li>
+                           <li><a class="dropdown-item" href="#">
+                                 <div></div>
+                                 <div>
+                                    <h6> <img src="images/message-icon2.png" alt=""><span>Edit your information in a
+                                          swipe</span> Sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                       deserunt mollit anim.</h6>
+                                    <p class="small mb-0">
+                                       <small>Feb 12, 2022</small>
+                                    </p>
+                                 </div>
+                              </a>
+
+                           </li>
+                           <li><a class="dropdown-item" href="#">
+                                 <div></div>
+                                 <div>
+                                    <h6> <img src="images/message-icon2.png" alt=""><span>Edit your information in a
+                                          swipe</span> Sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                       deserunt mollit anim.</h6>
+                                    <p class="small mb-0">
+                                       <small>Feb 12, 2022</small>
+                                    </p>
+                                 </div>
+                              </a>
+
+                           </li>
+                           <li><a class="dropdown-item" href="#">
+                                 <div></div>
+                                 <div>
+                                    <h6> <img src="images/message-icon2.png" alt=""><span>Edit your information in a
+                                          swipe</span> Sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                       deserunt mollit anim.</h6>
+                                    <p class="small mb-0">
+                                       <small>Feb 12, 2022</small>
+                                    </p>
+                                 </div>
+                              </a>
+
+                           </li>
+                           <li><a class="dropdown-item readmore-btn" href="#">
+                                 Read More
+                              </a>
+                           </li>
+                        </ul>
+                     </li>
+                     <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                           aria-expanded="false"><img src="images/bell-icon.png" alt="Bell Icon">
+                           <span class="count">4</span>
+                        </a>
+                        <ul class="dropdown-menu custom-dropdown">
+                           <li class="dropdown-heading"><span>10</span>&nbsp;Notification</li>
+                           <li><a class="dropdown-item" href="#">
+                                 <div></div>
+                                 <div>
+                                    <h6> <img src="images/speaker-icon.png" alt=""><span>Edit your information in a
+                                          swipe</span> Sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                       deserunt mollit anim.</h6>
+                                    <p class="small mb-0">
+                                       <small>Feb 12, 2022</small>
+                                    </p>
+                                 </div>
+                              </a>
+
+                           </li>
+                           <li><a class="dropdown-item" href="#">
+                                 <div></div>
+                                 <div>
+                                    <h6> <img src="images/speaker-icon.png" alt=""><span>Edit your information in a
+                                          swipe</span> Sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                       deserunt mollit anim.</h6>
+                                    <p class="small mb-0">
+                                       <small>Feb 12, 2022</small>
+                                    </p>
+                                 </div>
+                              </a>
+
+                           </li>
+                           <li><a class="dropdown-item" href="#">
+                                 <div></div>
+                                 <div>
+                                    <h6> <img src="images/speaker-icon.png" alt=""><span>Edit your information in a
+                                          swipe</span> Sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                       deserunt mollit anim.</h6>
+                                    <p class="small mb-0">
+                                       <small>Feb 12, 2022</small>
+                                    </p>
+                                 </div>
+                              </a>
+
+                           </li>
+                           <li><a class="dropdown-item readmore-btn" href="#">
+                                 Read More
+                              </a>
+                           </li>
+                        </ul>
+                     </li>
+                     <li class="nav-item logout-icon">
+                        <a href="#" class="btn logout-btn"><span class="desktop-text">Logout</span> <img
+                              src="images/log-out-icon.png" alt="logout-icon" class="mobile-icon"></a>
+                     </li>
+                  </ul>
+
+               </div>
+            </div>
+         </div>
+      </nav>
+   </header>
+   <!-- End Header-->
+   <!--Main-->
+   <main>
+      <section class="hero-section">
+         <div class="container-fluid">
+         </div>
+      </section>
+      <!--Page-->
+      <div class="page">
+         <div class="container-fluid page-container h-100">
+            <!--SideBar-->
+            <aside class="h-100">
+               <div class="side-nav h-100">
+                  <div class="cu-logo mobile-ver">
+                     <a href="#"><img src="images/cu-logo-dark.png" alt="" width="160px;"></a>
+                  </div>
+                  <ul class="nav nav-tabs" id="nav-tab" role="tablist">
+                     <li>
+                        <a href="#" class="nav-link active" id="nav-dashboard-tab" data-bs-toggle="tab"
+                           data-bs-target="#nav-dashboard" type="button" role="tab" aria-controls="nav-dashboard"
+                           aria-selected="true">
+                           <img src="images/home-icon.png" alt="">
+                           <span>Dashboard</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#" class="nav-link" id="nav-calender-tab" data-bs-toggle="tab"
+                           data-bs-target="#nav-calender" type="button" role="tab" aria-controls="nav-calender"
+                           aria-selected="false">
+                           <img src="images/calender-icon.png" alt="">
+                           <span>Calendar</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#" class="nav-link" id="nav-course-tab" data-bs-toggle="tab"
+                           data-bs-target="#nav-course" type="button" role="tab" aria-controls="nav-course"
+                           aria-selected="false">
+                           <img src="images/document-icon.png" alt="">
+                           <span>My courses</span>
+                        </a>
+                     </li>
+                  </ul>
+                  <ul class="nav nav-tabs">
+                     <li>
+                        <a href="#" class="nav-link" id="nav-course-tab" data-bs-toggle="tab"
+                           data-bs-target="#nav-course" type="button" role="tab" aria-controls="nav-course"
+                           aria-selected="false">
+                           <img src="images/setting-icon.png" alt="">
+                           <span>Accessibility settings</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#" class="nav-link" id="nav-course-tab" data-bs-toggle="tab"
+                           data-bs-target="#nav-course" type="button" role="tab" aria-controls="nav-course"
+                           aria-selected="false">
+                           <img src="images/log-out-icon.png" alt="">
+                           <span>Logout</span>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </aside>
+            <div class="main-content">
+               <div class="main-content-body">
+                  <div class="tab-pane fade show active" id="nav-dashboard" role="tabpanel"
+                     aria-labelledby="nav-dashboard-tab" tabindex="0">
+                     <div class="breadcrumbSection">
+                        <h2 class="title-heading">Hybrid_Content</h2>
+                        <nav aria-label="breadcrumb">
+                           <ol class="breadcrumb">
+                              <li class="breadcrumb-item"><a href="detail.html">Home</a></li>
+                              <li class="breadcrumb-item"><a href="detail.html">Course</a></li>
+                              <li class="breadcrumb-item active" aria-current="page">Course Overview </li>
+                           </ol>
+                        </nav>
+                     </div>
+                     <div class="row courseCards">
+                        <div class="course-content">
+                           <div class="contentHeading">
+                              <h2 class="sub-heading">
+                                 Lecture 1.1.1
+                              </h2>
+                              <ul class="list-unstyled setting-list">
+                                 <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="dropdown04"
+                                       data-bs-toggle="dropdown" aria-expanded="false"><i
+                                          class="fa-regular fa-gear"></i></a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdown04">
+                                       <li><a class="dropdown-item" href="#"><i class="fa-regular fa-arrow-right"></i>
+                                             &nbsp; Edit settings</a></li>
+                                       <li><a class="dropdown-item" href="#"><i class="fa-regular fa-arrow-right"></i>
+                                             &nbsp; Competency breakdown</a></li>
+                                       <li><a class="dropdown-item" href="#"><i class="fa-regular fa-arrow-right"></i>
+                                             &nbsp; Advanced grading</a></li>
+                                       <li><a class="dropdown-item" href="#"><i class="fa-regular fa-arrow-right"></i>
+                                             &nbsp; Forum summary report</a></li>
+                                       <li><a class="dropdown-item" href="#"><i class="fa-regular fa-arrow-right"></i>
+                                             &nbsp; Subscription mode</a>
+                                          <ul class="">
+                                             <li><a class="dropdown-item" href="#"><i
+                                                      class="fa-regular fa-arrow-right"></i> &nbsp; Optional
+                                                   subscription</a></li>
+                                             <li><a class="dropdown-item" href="#"><i
+                                                      class="fa-regular fa-arrow-right"></i> &nbsp; Forced
+                                                   subscription</a></li>
+                                             <li><a class="dropdown-item" href="#"><i
+                                                      class="fa-regular fa-arrow-right"></i> &nbsp; Auto
+                                                   subscription</a></li>
+                                             <li><a class="dropdown-item" href="#"><i
+                                                      class="fa-regular fa-arrow-right"></i> &nbsp; Subscription
+                                                   disabled</a></li>
+                                          </ul>
+                                       </li>
+
+                                       <li><a class="dropdown-item" href="#"><i class="fa-regular fa-arrow-right"></i>
+                                             &nbsp; Show/edit current subscribers</a></li>
+                                       <li><a class="dropdown-item" href="#"><i class="fa-regular fa-arrow-right"></i>
+                                             &nbsp;Export</a></li>
+                                    </ul>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="mainContent">
+                              <p class="mb-2">The instructor can upload the following material into this document:</p>
+                              <ul>
+                                 <li>Course Outcome to be mentioned which is mapped with this lecture topic. </li>
+                                 <li>Reading Material of this lecture topic.</li>
+                                 <li>Relevant Video links for this lecture topic.</li>
+                                 <li>Relevant Books readings (Web Links / Web Links of PDFs) for this lecture topic.
+                                 </li>
+                                 <li>Any web-link to be attached relevant to the topic.</li>
+                              </ul>
+                              <p>(Note: Different lecture topics can be merged in the single document and the relevant
+                                 material can be uploaded w.r.t covering those lecture topics)</p>
+                              <p>Objective: To draw a sketch of motherboard, showcasing the PCI slots, Memory slots,
+                                 Processor, CPU Fan, Heat Sink, Capacitors, Inductors and fan connector and explain the
+                                 importance and requirement of these devices.</p>
+                              <p class="mb-2"><b>1. Motherboard:</b></p>
+                              <p>Let us begin with the main role of a motherboard. In essence, it serves two purposes:
+                              </p>
+                              <ul>
+                                 <li>Provide electrical power to the individual components</li>
+                                 <li>Provide a route to allow the components to communicate with each other</li>
+                              </ul>
+                              <p>There are other things a motherboard does (e.g. holds the components in place, or
+                                 provides feedback as to how well everything is functioning) but the aforementioned
+                                 aspects are critical to how a PC operates, that almost every other part that makes up
+                                 the motherboard, is related to these two things.</p>
+                              <ul>
+                                 <li>Nearly every motherboard used in a standard desktop PC today will have sockets for
+                                    the central processing unit (CPU), memory modules (nearly always a type of DRAM),
+                                    add-in expansion cards (such a graphics card), storage, input/outputs, and a means
+                                    to communicate with other computers and systems.</li>
+                                 <li>Standard motherboards initially differ in terms of their size, and there are
+                                    industry-wide standards that manufacturers tend to adhere to (and plenty of others
+                                    that don't)</li>
+                                 <li>According to Wikipedia, a motherboard (also called mainboard, main circuit board,
+                                    system board, baseboard, planar board, logic board, or mobo) is the main printed
+                                    circuit board (PCB) in general-purpose computers and other expandable systems.</li>
+                                 <li>It holds and allows communication between many of the crucial electronic components
+                                    of a system, such as the central processing unit (CPU) and memory, and provides
+                                    connectors for other peripherals.</li>
+                                 <li>Unlike a backplane, a motherboard usually contains significant sub-systems, such as
+                                    the central processor, the chipset's input/output and memory controllers, interface
+                                    connectors, and other components integrated for general use.</li>
+                                 <li>This board is often referred to as the "mother" of all components attached to it,
+                                    which often include peripherals, interface cards, and daughter cards: sound cards,
+                                    video cards, network cards, host bus adapters, TV tuner cards, IEEE 1394 cards; and
+                                    a variety of other custom components.</li>
+                              </ul>
+                              <p class="mb-2"><b>2. Expansion Slots:</b></p>
+                              <ul>
+                                 <li> Alternatively referred to as a bus slot or expansion port, an expansion slot is
+                                    connection or port located inside a computer on the motherboard or riser board that
+                                    allows a computer hardware expansion card to be connected to add functionality to a
+                                    computer system via the expansion bus.</li>
+                              </ul>
+                              <p class="mb-2"> <b>2 (a). Why do computers have expansion slots?</b></p>
+                              <ul>
+                                 <li>Computers have expansion slots to give the user the ability to add new devices to
+                                    their computer.</li>
+                                 <li>For example, a computer gamer may upgrade their video card to get better
+                                    performance in their games.</li>
+                                 <li>An expansion slot allows them to remove the old video card and add a new video card
+                                    without replacing the motherboard.</li>
+                              </ul>
+                              <p class="mb-2"><b>3.PCI Slots:</b></p>
+                              <ul>
+                                 <li>Short for peripheral component interconnect, PCI was introduced by Intel in 1992.
+                                 </li>
+                                 <li>The PCI bus came in both32-bit(133 MB ps)and64-bitversions and was used to attach
+                                    hardware to a computer.</li>
+                                 <li>Although commonly used in computers from the late 1990s to the early 2000s, PCI has
+                                    since been replaced with PCI Express.</li>
+                                 <li>PCI has begun to die out quite a bit though, and has been succeeded by PCI Express.
+                                 </li>
+                                 <li>There is a very big difference between the two.</li>
+                                 <li>PCI was a parallel interface, which means that it dealt with large amounts of data
+                                    by splitting them up and sending them at a low speed.</li>
+                                 <li>PCI Express, in contrast, is a serial interface, which means that it sends them one
+                                    at a time, really fast. Imagine that you have 20 people who all have to cross a
+                                    river.</li>
+                                 <li>In a parallel interface, 10 of the people will cross at once. Each one has a very
+                                    specific landing point.</li>
+                                 <li>However, when they are crossing, inevitably some will get mixed up in their landing
+                                    spot, and will have to cross again.</li>
+                              </ul>
+                              <p class="mb-2"><b>4.Heat Sink:</b></p>
+                              <ul>
+                                 <li>A heatsink is a device that incorporates a fan or another mechanism to reduce the
+                                    temperature of a hardware component (e.g., processor).</li>
+                                 <li>There are two heat sink types: active and passive. The picture is an example of a
+                                    heat sink that has both active and passive cooling mechanisms.</li>
+                              </ul>
+
+
+
+                           </div>
+                           <p class="mb-4">Last modified: Saturday, 23 July 2022, 9:46 AM</p>
+                           <div class="pagination activity">
+                              <a href="demo_file.html"><i class="fa-regular fa-angle-left"></i> &nbsp; <p>Previous
+                                    <span>activity</span></p> </a>
+                              <select class="form-select" aria-label="Default select example">
+                                 <option value="" selected="">Jump to...</option>
+                                 <option value="">Course Introduction, Objectives and Outcomes</option>
+                                 <option value="">Course Information</option>
+                                 <option value="">Course Syllabus and Suggestive Readings</option>
+                                 <option value="">Netiquette Guidelines</option>
+                                 <option value="">Computer Requirements</option>
+                                 <option value="">Demo page</option>
+                                 <option value="">Demo file</option>
+                                 <option value="">demo url</option>
+                                 <option value="">Hindi Type</option>
+                                 <option value="">Lecture Topic 1.1.1</option>
+                                 <option value="">Relevant PPT*/Notes of Lecture Topic 1.1.1</option>
+                                 <option value="">Lecture Topic 1.1.2</option>
+                                 <option value="">Relevant PPT*/Notes of Lecture Topic 1.1.2</option>
+                                 <option value="">Sample PPT</option>
+                                 <option value="">demo file</option>
+                                 <option value="">Lecture Topic 1.2.1</option>
+                                 <option value="">Relevant PPT*/Notes of Lecture Topic 1.2.1</option>
+                                 <option value="">Lecture Topic 1.2.2</option>
+                                 <option value="">Relevant PPT*/Notes of Lecture Topic 1.2.2</option>
+                                 <option value="">PPT 1.2 WINDOW INSTALLATION</option>
+                                 <option value="">Lecture Topic 1.3.1</option>
+                                 <option value="">Relevant PPT*/Notes of Lecture Topic 1.3.1</option>
+                                 <option value="">Lecture Topic 1.3.2</option>
+                                 <option value="">Relevant PPT*/Notes of Lecture Topic 1.3.2</option>
+                                 <option value="">Lecture Topic 2.1.1</option>
+                                 <option value="">Relevant PPT*/Notes of Lecture Topic 2.1.1</option>
+                                 <option value="">Lecture Topic 2.1.2</option>
+                                 <option value="">Relevant PPT*/Notes of Lecture Topic 2.1.2</option>
+                                 <option value="">Lecture Topic 2.2.1</option>
+                                 <option value="">Relevant PPT*/Notes of Lecture Topic 2.2.1</option>
+                                 <option value="">Lecture Topic 2.2.2</option>
+                                 <option value="">Relevant PPT*/Notes of Lecture Topic 2.2.2</option>
+                                 <option value="">Lecture Topic 2.3.1</option>
+                                 <option value="">Relevant PPT*/Notes of Lecture Topic 2.3.1</option>
+                                 <option value="">Lecture Topic 2.3.2</option>
+                                 <option value="">Relevant PPT*/Notes of Lecture Topic 2.3.2</option>
+                                 <option value="">Lecture Topic 3.1.1</option>
+                                 <option value="">Relevant PPT*/Notes of Lecture Topic 3.1.1</option>
+                                 <option value="">Lecture Topic 3.1.2</option>
+                                 <option value="">Relevant PPT*/Notes of Lecture Topic 3.1.2</option>
+                                 <option value="">Lecture Topic 3.2.1</option>
+                                 <option value="">Relevant PPT*/Notes of Lecture Topic 3.2.1</option>
+                                 <option value="">Lecture Topic 3.2.2</option>
+                                 <option value="">Relevant PPT*/Notes of Lecture Topic 3.2.2</option>
+                                 <option value="">Lecture Topic 3.3.1</option>
+                                 <option value="">Relevant PPT*/Notes of Lecture Topic 3.3.1</option>
+                                 <option value="">Lecture Topic 3.3.2</option>
+                                 <option value="">Relevant PPT*/Notes of Lecture Topic 3.3.2</option>
+                                 <option value="">Course Outcome</option>
+                                 <option value="">MOTHERBOARD VIDEO</option>
+                                 <option value="">BOOK CONTENT EXPERIMENT 1.1</option>
+                                 <option value="">PPT EXPERIMENT 1.1</option>
+                                 <option value="">EXTRA READING MATERIAL 1.1</option>
+                                 <option value="">Experiment Manual 1.1</option>
+                                 <option value="">COURSE OUTCOME</option>
+                                 <option value="">VIDEO 1.2 ASSEMBLY DISASSEMBLY</option>
+                                 <option value="">BOOK CONTENT 1.2</option>
+                                 <option value="">PPT 1.2</option>
+                                 <option value="">EXTRA READING MATERIAL 1.2</option>
+                                 <option value="">EXPERIMENT MANUAL 1.2</option>
+                                 <option value="">COURSE OUTCOMES</option>
+                                 <option value="">VIDEO 1.3</option>
+                                 <option value="">BOOK CONTENT 1.3</option>
+                                 <option value="">PPT 1.3</option>
+                                 <option value="">EXTRA READING MATERIAL 1.3</option>
+                                 <option value="">EXPERIMENT MANUAL 1.3</option>
+                                 <option value="">Experiment-2.1</option>
+                                 <option value="">to check</option>
+                                 <option value="">Experiment-2.2</option>
+                                 <option value="">Experiment-2.3</option>
+                                 <option value="">Experiment-2.4 (hidden)</option>
+                                 <option value="">Experiment-3.1</option>
+                                 <option value="">Experiment-3.2</option>
+                                 <option value="">Experiment-3.3</option>
+                              </select>
+                              <a href="hindi_type.html">
+                                 <p>Next <span>activity</span></p>&nbsp;<i class="fa-regular fa-angle-right"></i>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+
+               </div>
+               <!--Footer-->
+               <footer>
+                  <p class="copyright">POWERED BY CHANDIGARH UNIVERSITY</p>
+               </footer>
+               <!--Footer-->
+            </div>
+         </div>
+      </div>
+   </main>
+   <!--End of Main-->
+   <script src="js/jquery.min.js"></script>
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/fontawesome.min.js"></script>
+   <script>
+      $(window).scroll(function () {
+         if ($(this).scrollTop() > 1) {
+            $('header').addClass("fixed");
+         } else {
+            $('header').removeClass("fixed");
+         }
+      });
+
+      $(".toggle-btn").click(function () {
+         $(".page").toggleClass("sidebar");
+         $(".toggle-btn").toggleClass("close");
+         $(".overlay").toggleClass("open");
+         $(".page .main-content").toggleClass("show");
+         $("main").toggleClass("show");
+      });
+
+      if ($(window).width() < 767) {
+         $(".main-content").click(function () {
+            $(".page").removeClass("sidebar");
+            $(".main-content").removeClass("show");
+            $(".toggle-btn").removeClass("close");
+            $("main").removeClass("show");
+         });
+      }
+   </script>
+</body>
+
+</html>
